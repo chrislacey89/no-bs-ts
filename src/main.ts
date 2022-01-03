@@ -1,4 +1,17 @@
 import "./style.css";
+import addNumbers from "./functions";
+import { addStrings } from "./functions";
+import { parseCoordinate } from "./function-overload";
+
+console.log(parseCoordinate(10, 20));
+console.log(parseCoordinate({ x: 52, y: 35 }));
+console.log(parseCoordinate("x:12,y:22"));
+
+
+const result = addNumbers(1, 2);
+console.log("🚀 ~ file: main.ts ~ line 5 ~ result", result)
+const addStringsResult = addStrings('hello')
+console.log("🚀 ~ file: main.ts ~ line 8 ~ addStringsResult", addStringsResult)
 
 const myValue: string = "chris";
 let myVariable: number = 1;
